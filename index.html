@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books spy</title>
+
+<link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Book Spy</h1>
+    </div>
+
+    <div class="container">
+      <div class="book-container">
+        <h2>Senthil's Book store</h2>
+        <h5>Franchise</h5>
+        <p>
+          Welcome to our book store, where every book opens the door to a new world of knowledge and imagination. 
+We offer a wide collection of novels, educational books, children's stories, self-development books, and more. 
+Our goal is to bring quality books to readers and inspire learning, creativity, and growth. 
+Visit our store and discover your next favorite book today.
+        </p>
+        <button onclick="deletebook(event)">Delete</button>
+      </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+      <h2>Add book</h2>
+      <form>
+        <input type="text" placeholder="Book Title" id="book-title-input" />
+        <input type="text" place holder="Book Author" id="book-author-input" />
+        <textarea
+          placeholder="Short Description"
+          id="book-desription-input"
+        ></textarea>
+        <button id="add-book">ADD</button>
+        <button id="cancel-popup">CANCEL</button>
+      </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
